@@ -1,39 +1,80 @@
 <template name="artists">
   <h1>Artists</h1>
-
-  <div class="row">
+  {{#if isInRole 'admin'}}
+  {{> admin_nav}}
+  {{/if}}
+  <div class="column">
     <div class="col-lg-3 col-sm-6">
 
       <div class="card hovercard">
         <div class="cardheader">
 
         </div>
+        <div class="artist-title">
+          <a target="_blank" href="http://soundcloud.com/philt3r">@philt3r</a>
+        </div>
         <div class="avatar">
-          <img alt="" src="images/artists/philt3r-bush.jpg">
+          <img alt="" src="images/artists/philt3r-bush.jpg" width="100%">
         </div>
         <div class="info">
-          <div class="title">
-            <a target="_blank" href="http://soundcloud.com/philt3r">@philt3r</a>
-          </div>
           <div class="desc">Progressive Psy</div>
           <div class="desc">Techno</div>
           <div class="desc">Deep House</div>
         </div>
         <div class="bottom">
-          <a class="btn btn-primary btn-twitter btn-md" href="https://twitter.com/webmaniac">
-            <i class="fa fa-twitter"></i>
-          </a>
-          <a class="btn btn-danger btn-md" rel="publisher"
-             href="https://plus.google.com/+ahmshahnuralam">
-            <i class="fa fa-google-plus"></i>
-          </a>
-          <a class="btn btn-primary btn-md" rel="publisher"
-             href="https://plus.google.com/shahnuralam">
-            <i class="fa fa-facebook"></i>
-          </a>
-          <a class="btn btn-warning btn-md" rel="publisher" href="https://plus.google.com/shahnuralam">
-            <i class="fa fa-behance"></i>
-          </a>
+          <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?embed_type=widget_standard&amp;embed_uuid=a2b7b4c9-07ae-4a07-958d-c06127cb8b36&amp;feed=https%3A%2F%2Fwww.mixcloud.com%2Fphilt3r%2Fearthcore-2015%2F&amp;hide_artwork=1&amp;hide_cover=1&amp;hide_tracklist=1&amp;light=1&amp;mini=1&amp;replace=0" frameborder="0"></iframe>
+          <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?embed_type=widget_standard&amp;embed_uuid=ac672745-df92-440e-88ff-986c12cf0598&amp;feed=https%3A%2F%2Fwww.mixcloud.com%2Fphilt3r%2Fsquared-senses-2015-prog-psy%2F&amp;hide_artwork=1&amp;hide_cover=1&amp;hide_tracklist=1&amp;light=1&amp;mini=1&amp;replace=0" frameborder="0"></iframe>
+          <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/152757855&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="col-lg-3 col-sm-6">
+
+      <div class="card hovercard">
+        <div class="cardheader">
+
+        </div>
+        <div class="artist-title">
+          <a target="_blank" href="http://soundcloud.com/philt3r">@philt3r</a>
+        </div>
+        <div class="avatar">
+          <img alt="" src="images/artists/philt3r-bush.jpg" width="100%">
+        </div>
+        <div class="info">
+          <div class="desc">Progressive Psy</div>
+          <div class="desc">Techno</div>
+          <div class="desc">Deep House</div>
+        </div>
+        <div class="bottom">
+          <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?embed_type=widget_standard&amp;embed_uuid=a2b7b4c9-07ae-4a07-958d-c06127cb8b36&amp;feed=https%3A%2F%2Fwww.mixcloud.com%2Fphilt3r%2Fearthcore-2015%2F&amp;hide_artwork=1&amp;hide_cover=1&amp;hide_tracklist=1&amp;light=1&amp;mini=1&amp;replace=0" frameborder="0"></iframe>
+          <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?embed_type=widget_standard&amp;embed_uuid=ac672745-df92-440e-88ff-986c12cf0598&amp;feed=https%3A%2F%2Fwww.mixcloud.com%2Fphilt3r%2Fsquared-senses-2015-prog-psy%2F&amp;hide_artwork=1&amp;hide_cover=1&amp;hide_tracklist=1&amp;light=1&amp;mini=1&amp;replace=0" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="col-lg-3 col-sm-6">
+
+      <div class="card hovercard">
+        <div class="cardheader">
+
+        </div>
+        <div class="artist-title">
+          <a target="_blank" href="http://soundcloud.com/philt3r">@philt3r</a>
+        </div>
+        <div class="avatar">
+          <img alt="" src="images/artists/philt3r-bush.jpg" width="100%">
+        </div>
+        <div class="info">
+          <div class="desc">Progressive Psy</div>
+          <div class="desc">Techno</div>
+          <div class="desc">Deep House</div>
+        </div>
+        <div class="bottom">
+          <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?embed_type=widget_standard&amp;embed_uuid=a2b7b4c9-07ae-4a07-958d-c06127cb8b36&amp;feed=https%3A%2F%2Fwww.mixcloud.com%2Fphilt3r%2Fearthcore-2015%2F&amp;hide_artwork=1&amp;hide_cover=1&amp;hide_tracklist=1&amp;light=1&amp;mini=1&amp;replace=0" frameborder="0"></iframe>
+          <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?embed_type=widget_standard&amp;embed_uuid=ac672745-df92-440e-88ff-986c12cf0598&amp;feed=https%3A%2F%2Fwww.mixcloud.com%2Fphilt3r%2Fsquared-senses-2015-prog-psy%2F&amp;hide_artwork=1&amp;hide_cover=1&amp;hide_tracklist=1&amp;light=1&amp;mini=1&amp;replace=0" frameborder="0"></iframe>
         </div>
       </div>
     </div>

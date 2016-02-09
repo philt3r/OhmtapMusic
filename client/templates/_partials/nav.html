@@ -9,7 +9,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Ohmtap Music</a>
+        <a class="navbar-brand" href="/">Ohmtap Music</a>
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
@@ -17,10 +17,10 @@
           <li><a href="{{pathFor 'artists'}}">Artists</a></li>
           <li><a href="{{pathFor 'releases'}}">Releases</a></li>
         </ul>
+        <ul class="nav navbar-nav navbar-right">
+          {{> loginButtons}} <!-- here -->
+        </ul>
       </div>
-      <ul class="nav navbar-nav navbar-right">
-        {{> loginButtons}} <!-- here -->
-      </ul>
       <!--/.nav-collapse -->
     </div>
   </nav>

@@ -14,3 +14,8 @@ body {
 .sk-spinner-rotating-plane.sk-spinner {
     background-color: #fff;
 }
+.artist-title{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
