@@ -1,81 +1,80 @@
 <template name="artists">
-  <h1>Artists</h1>
-  {{#if isInRole 'admin'}}
-  {{> admin_nav}}
-  {{/if}}
-  <div class="column">
-    <div class="col-lg-3 col-sm-6">
-
-      <div class="card hovercard">
-        <div class="cardheader">
-
+  <div class="ui stackable link three cards">
+    <div class="card">
+      <div class="image">
+        <img alt="" src="images/artists/philt3r-bush.jpeg">
+      </div>
+      <div class="content">
+        <div class="header">@philt3r</div>
+        <div class="meta">
+          <a>Techno</a>
+          <a>Deep House</a>
+          <a>Psy-trance</a>
         </div>
-        <div class="artist-title">
-          <a target="_blank" href="http://soundcloud.com/philt3r">@philt3r</a>
-        </div>
-        <div class="avatar">
-          <img alt="" src="images/artists/philt3r-bush.jpg" width="100%">
-        </div>
-        <div class="info">
-          <div class="desc">Progressive Psy</div>
-          <div class="desc">Techno</div>
-          <div class="desc">Deep House</div>
-        </div>
-        <div class="bottom">
-          <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?embed_type=widget_standard&amp;embed_uuid=a2b7b4c9-07ae-4a07-958d-c06127cb8b36&amp;feed=https%3A%2F%2Fwww.mixcloud.com%2Fphilt3r%2Fearthcore-2015%2F&amp;hide_artwork=1&amp;hide_cover=1&amp;hide_tracklist=1&amp;light=1&amp;mini=1&amp;replace=0" frameborder="0"></iframe>
-          <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?embed_type=widget_standard&amp;embed_uuid=ac672745-df92-440e-88ff-986c12cf0598&amp;feed=https%3A%2F%2Fwww.mixcloud.com%2Fphilt3r%2Fsquared-senses-2015-prog-psy%2F&amp;hide_artwork=1&amp;hide_cover=1&amp;hide_tracklist=1&amp;light=1&amp;mini=1&amp;replace=0" frameborder="0"></iframe>
-          <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/152757855&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+        <div class="description">
+          @philt3r, is not a metaphor for a side affect, but rather a side affect of a metamorphosis. For a decade, he has planted smiles and swivelled dials along that great stretch of party paradise that is the east-coast of Australia and his sets end up spanning more genres than a well thought out
+          <a class="item" href="{{pathFor route='philt3r'}}"><i class="music icon"></i> read more</a>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="column">
-    <div class="col-lg-3 col-sm-6">
-
-      <div class="card hovercard">
-        <div class="cardheader">
-
-        </div>
-        <div class="artist-title">
-          <a target="_blank" href="http://soundcloud.com/philt3r">@philt3r</a>
-        </div>
-        <div class="avatar">
-          <img alt="" src="images/artists/philt3r-bush.jpg" width="100%">
-        </div>
-        <div class="info">
-          <div class="desc">Progressive Psy</div>
-          <div class="desc">Techno</div>
-          <div class="desc">Deep House</div>
-        </div>
-        <div class="bottom">
-          <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?embed_type=widget_standard&amp;embed_uuid=a2b7b4c9-07ae-4a07-958d-c06127cb8b36&amp;feed=https%3A%2F%2Fwww.mixcloud.com%2Fphilt3r%2Fearthcore-2015%2F&amp;hide_artwork=1&amp;hide_cover=1&amp;hide_tracklist=1&amp;light=1&amp;mini=1&amp;replace=0" frameborder="0"></iframe>
-          <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?embed_type=widget_standard&amp;embed_uuid=ac672745-df92-440e-88ff-986c12cf0598&amp;feed=https%3A%2F%2Fwww.mixcloud.com%2Fphilt3r%2Fsquared-senses-2015-prog-psy%2F&amp;hide_artwork=1&amp;hide_cover=1&amp;hide_tracklist=1&amp;light=1&amp;mini=1&amp;replace=0" frameborder="0"></iframe>
-        </div>
+      <div class="extra content">
+        <a href="/philt3r/releases" class="right floated">
+          <i class="play circle icon"></i>
+          Releases
+        </a>
+        <a href="/philt3r/mixes">
+          <i class="play sign icon"></i>
+          Mixes
+        </a>
       </div>
     </div>
-  </div>
-  <div class="column">
-    <div class="col-lg-3 col-sm-6">
-
-      <div class="card hovercard">
-        <div class="cardheader">
-
+    <div class="card">
+      <div class="image">
+        <img alt="" src="images/artists/bizzle.png">
+      </div>
+      <div class="content">
+        <div class="header">Bizzle</div>
+        <div class="meta">
+          <a>Breaks</a>
         </div>
-        <div class="artist-title">
-          <a target="_blank" href="http://soundcloud.com/philt3r">@philt3r</a>
+        <div class="description">
+          Josh Warren AKA ‘Bizzle’ has always held a passion for anything broken and electronic. Hoarding broken electronic toys from age six, he was always unsure what attracted him to the distorted beats and bleeps these things made .The years grew longer but his interest in broken electronic ...
+          <a class="item" href="{{pathFor route='bizzle'}}"><i class="music icon"></i> read more</a>
         </div>
-        <div class="avatar">
-          <img alt="" src="images/artists/philt3r-bush.jpg" width="100%">
+      </div>
+      <div class="extra content">
+        <a href="/bizzle/releases" class="right floated">
+          <i class="play circle icon"></i>
+          Releases
+        </a>
+        <a href="/bizzle/mixes">
+          <i class="play sign icon"></i>
+          Mixes
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image">
+        <img alt="" src="images/artists/teejay.jpg">
+      </div>
+      <div class="content">
+        <div class="header">Hot Wire</div>
+        <div class="meta">
+          <a>Deep House</a>
         </div>
-        <div class="info">
-          <div class="desc">Progressive Psy</div>
-          <div class="desc">Techno</div>
-          <div class="desc">Deep House</div>
+        <div class="description">
+          Get a dog up ya trackies no dramas get a dog up ya squizz. Built like a bloke heaps he's got a massive galah. Lets throw a spewin' bloody he's got a massive apples. Trent from punchy kindie flamin stands out like a spag bol. He hasn't got a two up where gutful of bail up. You little ripper bities (read more)...
+          <a class="item" href="{{pathFor route='hot-wire'}}"><i class="music icon"></i> read more</a>
         </div>
-        <div class="bottom">
-          <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?embed_type=widget_standard&amp;embed_uuid=a2b7b4c9-07ae-4a07-958d-c06127cb8b36&amp;feed=https%3A%2F%2Fwww.mixcloud.com%2Fphilt3r%2Fearthcore-2015%2F&amp;hide_artwork=1&amp;hide_cover=1&amp;hide_tracklist=1&amp;light=1&amp;mini=1&amp;replace=0" frameborder="0"></iframe>
-          <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?embed_type=widget_standard&amp;embed_uuid=ac672745-df92-440e-88ff-986c12cf0598&amp;feed=https%3A%2F%2Fwww.mixcloud.com%2Fphilt3r%2Fsquared-senses-2015-prog-psy%2F&amp;hide_artwork=1&amp;hide_cover=1&amp;hide_tracklist=1&amp;light=1&amp;mini=1&amp;replace=0" frameborder="0"></iframe>
-        </div>
+      </div>
+      <div class="extra content">
+        <a href="/hot-wire/releases" class="right floated">
+          <i class="play circle icon"></i>
+          Releases
+        </a>
+        <a href="/hot-wire/mixes">
+          <i class="play sign icon"></i>
+          Mixes
+        </a>
       </div>
     </div>
   </div>

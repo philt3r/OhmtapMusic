@@ -6,6 +6,11 @@ Router.configure({
     loadingTemplate : 'loading',
     notFoundTemplate: 'notFound'
 });
+AccountsTemplates.configure({
+    defaultLayout: 'layout',
+});
+
+AccountsTemplates.configureRoute('signIn');
 
 Router.route("/", {
     name: 'home',
@@ -18,6 +23,18 @@ Router.route("/", {
 
 Router.route("/artists", {
     name: 'artists'
+});
+
+Router.route("/philt3r", {
+    name: 'philt3r'
+});
+
+Router.route("/philt3r/mixes", {
+    name: 'philt3rMixes'
+});
+
+Router.route("/philt3r/releases", {
+    name: 'philt3rReleases'
 });
 
 Router.route("/releases", {

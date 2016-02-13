@@ -1,27 +1,35 @@
 <template name="nav">
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/">Ohmtap Music</a>
+  <div id="menuDiv" class="ui pointing container stackable menu">
+    <a class="item" href="/">Home</a>
+    <div class="ui dropdown item">
+      Artists<i class="dropdown icon"></i>
+      <div class="menu">
+        <a class="item" href="{{pathFor route='artists'}}"><i class="music icon"></i> Everyone</a>
+        <a class="item" href="{{pathFor route='philt3r'}}"><i class="music icon"></i> @philt3r</a>
+        <a class="item" href="{{pathFor route='bizzle'}}"><i class="music icon"></i> Bizzle</a>
+        <a class="item" href="{{pathFor route='hot-wire'}}"><i class="music icon"></i> Hot Wire</a>
       </div>
-      <div id="navbar" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="{{pathFor 'artists'}}">Artists</a></li>
-          <li><a href="{{pathFor 'releases'}}">Releases</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          {{> loginButtons}} <!-- here -->
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
     </div>
-  </nav>
+    <div class="ui dropdown item">
+      Releases<i class="dropdown icon"></i>
+      <div class="menu">
+        <a class="item" href="{{pathFor route='releases'}}"><i class="music icon"></i> Everyone</a>
+        <a class="item" href="{{pathFor route='philt3rReleases'}}"><i class="music icon"></i> @philt3r</a>
+        <a class="item" href="{{pathFor route='bizzleReleases'}}"><i class="music icon"></i> Bizzle</a>
+        <a class="item" href="{{pathFor route='hot-wireReleases'}}"><i class="music icon"></i> Hot Wire</a>
+      </div>
+    </div>
+    <div class="ui dropdown item">
+      Mixes<i class="dropdown icon"></i>
+      <div class="menu">
+        <a class="item" href="{{pathFor route='mixes'}}"><i class="music icon"></i> Everyone</a>
+        <a class="item" href="{{pathFor route='philt3rMixes'}}"><i class="music icon"></i> @philt3r</a>
+        <a class="item" href="{{pathFor route='bizzleMixes'}}"><i class="music icon"></i> Bizzle</a>
+        <a class="item" href="{{pathFor route='hot-wireMixes'}}"><i class="music icon"></i> Hot Wire</a>
+      </div>
+    </div>
+    <div class="right menu">
+      {{> atNavButton}}
+    </div>
+  </div>
 </template>
